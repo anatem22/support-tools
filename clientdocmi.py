@@ -70,7 +70,7 @@ def searceFiles(MASTERID):
     HEADERS={'Content-type': 'application/json', 'Authorization': 'Bearer ' + tokenGet()}
 
     DATA={}
-    JSONDATA={"buckets":["CLIENTDOC_SERVICE"],"meta":{"doc_type":"clientdoc_mi","master_id":MASTERID}}
+    JSONDATA={"buckets":["CLIENTDOC_SERVICE"],"meta":{"doc_type":"clientdoc_service","master_id":MASTERID}}
     RESPONCE = requests.post(URL, data=DATA, json=JSONDATA, headers=HEADERS, verify=False, timeout=20)
     JJ=RESPONCE.json()
     out_data = []
