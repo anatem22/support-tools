@@ -9,4 +9,4 @@ class config(object):
     KK_URL=os.getenv('KK_URL')
     KK_CLIENT=os.getenv('KK_CLIENT')
     KK_REALM=os.getenv('KK_REALM')
-    BCSFS=os.getenv('FS')
+    FFS=os.getenv('FFS')
